@@ -1,5 +1,5 @@
 let now = new Date();
-let currentTime = document.querySelector("#current-time");
+let currentTime = document.querySelector("#currentTime");
 let days = [
   "Sunday",
   "Monday",

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src= "src/js-data-script.js"> </script>
+    <script
+      src="https://kit.fontawesome.com/a0852f6f3e.js"
+      crossorigin="anonymous"
+    >
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin ></link>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet"></link>
+</link>
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>What's your Weather</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>See what's happeing now. Search for your city <br /> ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼ 👇🏽 ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼</h2>
+
+    <form id="citySearch">
+          <div class="search-button">
+            <span class="search-text" >Search your weather now: </span>
+            <input
+              type="text"
+              placeholder="Enter a City"
+              class="search-value-box"
+              id="searchInput"
+            />
+            <input type="submit" value="Search" class="btn btn-dark" class="form-control"/>
+          </div>
+    </form>
+   <span><button class="btn btn-dark" id="currentLoctionButton">Current Location</button></span>
+
+    <div class="col-row">
+      <div class="card">
+        <div class="card-body">
+          <div class="col">
+            <h4 id="cityWeatherNow">What's your weather like in Abbotsford, WI now...</h4>
+            
+            <span class = "currentTime" id="current-time"></span> 
+              <i class="fas fa-cloud-moon"></i>
+            <span class="temp-now" id="tempNow">
+              55º
+            </span>
+            <span class= "col-row-" class="description-list">
+                <span class="col">
+                  <ul>
+                    <li>
+                        <span id ="temp-forcast">
+                      Cloudy 
+                        </span>
+                      </li>
+            <li>Feels Like: <span id ="temp-feel">52</span>°F</li>
+            
+                    <li>
+                        Humidity: <span id="humidity">20</span>%
+                      </li>
+                    <li>
+                          Wind: <span id="wind">14</span>mph
+                      </li>
+                  </ul>
+                </span>
+              </span>
+          </span>
+        </div>  
+      </div> 
+    </div>  
+
+
+    <div class="row">
+      <div class="col-row">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">5 Day Extended Forcast</h4>
+              <div class="extendedForcast"> 
+                <div class="dow">WEDNESDAY</div>
+                <i class="fas fa-cloud-sun"></i>
+                <div class="col-"><strong>57° - Thunderstorms <br />
+                    </strong>/42° - Thunderstorms
+                  </div>
+         
+                <div class="dow">THURSDAY</div>
+                <i class="fas fa-sun"></i>
+                <div class="col-row"><strong>51° - 50% Chance Rain <br />
+                    </strong>/30° - Partly Cloudy
+                  </div>
+             
+                <div class="dow">FRIDAY</div>
+                <i class="fas fa-cloud-sun"></i>
+                <div class="col-row"><strong>48° - Partly Sunny <br />
+                    </strong>/29° - Partly Cloudy
+                  </div>
+              
+                <div class="dow">SATURDAY</div>
+                <i class="fas fa-cloud-sun"></i>
+                <div class="col-row"><strong>49° - Mostly Sunny <br />
+                    </strong>/31° - Partly Cloudy
+                  </div>
+             
+                <div class="dow">SUNDAY</div>
+                <i class="fas fa-cloud-sun"></i>
+                <div class="col-row"><strong>49° - 30% Chance Rain <br />
+                    </strong>/39° - 40% Chance Rain
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <img class="weather-pic" src="media/weather_app.svg" /> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

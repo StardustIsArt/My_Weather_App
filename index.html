@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <script src= "src/js-data-script.js"> </script>
+    <script src= "src/script.js"> </script>
     <script
       src="https://kit.fontawesome.com/a0852f6f3e.js"
       crossorigin="anonymous"
@@ -33,7 +33,9 @@
 
     <form id="citySearch">
           <div class="search-button">
-            <span class="search-text" >Search your weather now: </span>
+            <span class="search-text" >
+                Search your weather now: 
+            </span>
             <input
               type="text"
               placeholder="Enter a City"
@@ -43,7 +45,11 @@
             <input type="submit" value="Search" class="btn btn-dark" class="form-control"/>
           </div>
     </form>
-   <span><button class="btn btn-dark" id="currentLoctionButton">Current Location</button></span>
+   <span>
+       <button class="btn btn-dark" id="currentLoctionButton">
+           Current Location
+        </button>
+    </span>
 
     <div class="col-row">
       <div class="card">
@@ -51,7 +57,7 @@
           <div class="col">
             <h4 id="cityWeatherNow">What's your weather like in Abbotsford, WI now...</h4>
             
-            <span class = "current-time" id="currentTime"></span> 
+            <span class = "currentTime" id="current-time"></span> 
               <i class="fas fa-cloud-moon"></i>
             <span class="temp-now" id="tempNow">
               55º
@@ -64,18 +70,30 @@
                       Cloudy 
                         </span>
                       </li>
-            <li>Feels Like: <span id ="temp-feel">52</span>°F</li>
-            
                     <li>
-                        Humidity: <span id="humidity">20</span>%
+                        Feels Like: 
+                        <span id ="temp-feel">
+                        52
+                        </span>
+                        °F
+                    </li>
+                    <li>
+                        Humidity: 
+                        <span id="humidity">
+                            20
+                        </span>
+                        %
                       </li>
                     <li>
-                          Wind: <span id="wind">14</span>mph
+                          Wind: 
+                          <span id="wind">
+                              14
+                            </span>
+                            mph
                       </li>
                   </ul>
                 </span>
-              </span>
-          </span>
+            </div>
         </div>  
       </div> 
     </div>  
@@ -124,6 +142,12 @@
     </div>
 
       <img class="weather-pic" src="media/weather_app.svg" /> 
+      <div>
+          <link href="https://github.com/StardustIsArt/My_Weather_App">
+          Open-source coded
+        </link>
+        , by Samantha Yocius
+    </div>
               </div>
             </div>
           </div>

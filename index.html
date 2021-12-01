@@ -29,7 +29,7 @@
 
   <body>
     <div class="container">
-      <h2>See what's happeing now. Search for your city <br /> ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼ 👇🏽 ⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼</h2>
+      <h2>Check Your City's Weather<hr /></h2>
 
     <form id="citySearch">
           <div class="search-button">
@@ -43,21 +43,21 @@
               id="searchInput"
             />
             <input type="submit" value="Search" class="btn btn-dark" class="form-control"/>
-          </div>
-    </form>
-   <span>
-       <button class="btn btn-dark" id="currentLoctionButton">
-           Current Location
+          <span>
+            <button class="btn btn-dark" id="currentLoctionButton">
+           Current
         </button>
-    </span>
-
+      </span>
+    </div>
+  </form>
+   
     <div class="col-row">
       <div class="card">
         <div class="card-body">
           <div class="col">
             <h4 id="cityWeatherNow">What's your weather like in Abbotsford, WI now...</h4>
             
-            <span class = "currentTime" id="current-time"></span> 
+            <div class="currentTime" id="current-time"></div> 
               <i class="fas fa-cloud-moon"></i>
             <span class="temp-now" id="tempNow">
               55º
@@ -93,10 +93,11 @@
                       </li>
                   </ul>
                 </span>
-            </div>
+              </span>
         </div>  
       </div> 
-    </div>  
+    </div> 
+  </div> 
 
 
     <div class="row">

@@ -17,8 +17,8 @@ div.container {
 h2 {
   color: rgb(66, 34, 97);
   font-family: "baloo 2";
-  padding: 10px 20px;
   font-weight: 500;
+  line-height: normal;
 }
 
 container.h3 {

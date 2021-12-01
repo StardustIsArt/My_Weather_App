@@ -1,5 +1,5 @@
 let now = new Date();
-let currentTime = document.querySelector("#currentTime");
+let currentTime = document.querySelector("#current-time");
 let days = [
   "Sunday",
   "Monday",
@@ -81,15 +81,6 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-//	let searchInput = document.querySelector("#searchInput");
-//	let cityWeatherNow = document.querySelector("#cityWeatherNow");
-//	let city = document.querySelector("#searchInput").value;
-//	if (searchInput.value) {
-//		cityWeatherNow.innerHTML = `What's your weather like in ${city} now...`;
-//	} else {
-//		alert(`Please enter a city`);
-//	}
-//}
 let form = document.querySelector("#citySearch");
 form.addEventListener("submit", handleSubmit);
 
